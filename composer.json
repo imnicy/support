@@ -1,0 +1,30 @@
+{
+    "name": "imnicy/support",
+    "description": "From Illuminate Support package.",
+    "license": "MIT",
+    "homepage": "https://imnicy.com",
+    "authors": [
+        {
+            "name": "Imnicy Support",
+            "email": "support@imnicy.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ramsey/uuid": "^4.0@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nicy\\Support\\": ""
+        },
+        "files": [
+            "helpers.php"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}
