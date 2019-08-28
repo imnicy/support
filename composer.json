@@ -1,5 +1,6 @@
 {
     "name": "imnicy/support",
+    "type": "library",
     "description": "From Illuminate Support package.",
     "license": "MIT",
     "homepage": "https://imnicy.com",
