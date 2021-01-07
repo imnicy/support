@@ -1450,7 +1450,6 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
      *
      * @param  int|null  $number
      * @return static|mixed
-     *
      * @throws \InvalidArgumentException
      */
     public function random($number = null)
@@ -2113,7 +2112,6 @@ class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate
      *
      * @param  string  $key
      * @return mixed
-     *
      * @throws \Exception
      */
     public function __get($key)

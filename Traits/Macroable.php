@@ -21,7 +21,6 @@ trait Macroable
      *
      * @param  string $name
      * @param  object|callable  $macro
-     *
      * @return void
      */
     public static function macro($name, $macro)
@@ -35,7 +34,6 @@ trait Macroable
      * @param  object  $mixin
      * @param  bool  $replace
      * @return void
-     *
      * @throws \ReflectionException
      */
     public static function mixin($mixin, $replace = true)
@@ -69,7 +67,6 @@ trait Macroable
      * @param  string  $method
      * @param  array  $parameters
      * @return mixed
-     *
      * @throws \BadMethodCallException
      */
     public static function __callStatic($method, $parameters)
@@ -93,7 +90,6 @@ trait Macroable
      * @param  string  $method
      * @param  array  $parameters
      * @return mixed
-     *
      * @throws \BadMethodCallException
      */
     public function __call($method, $parameters)
