@@ -31,11 +31,11 @@ abstract class Manager
     /**
      * Get a driver instance.
      *
-     * @param  string  $driver
+     * @param string $driver
      * @return mixed
      * @throws \InvalidArgumentException
      */
-    public function driver($driver = null)
+    public function driver($driver=null)
     {
         $driver = $driver ?: $this->getDefaultDriver();
 
@@ -58,7 +58,7 @@ abstract class Manager
     /**
      * Create a new driver instance.
      *
-     * @param  string  $driver
+     * @param string $driver
      * @return mixed
      * @throws \InvalidArgumentException
      */
@@ -82,7 +82,7 @@ abstract class Manager
     /**
      * Call a custom driver creator.
      *
-     * @param  string  $driver
+     * @param string $driver
      * @return mixed
      */
     protected function callCustomCreator($driver)
@@ -93,8 +93,8 @@ abstract class Manager
     /**
      * Register a custom driver creator Closure.
      *
-     * @param  string    $driver
-     * @param  \Closure  $callback
+     * @param string $driver
+     * @param \Closure $callback
      * @return $this
      */
     public function extend($driver, Closure $callback)
@@ -117,8 +117,8 @@ abstract class Manager
     /**
      * Dynamically call the default driver instance.
      *
-     * @param  string  $method
-     * @param  array   $parameters
+     * @param string $method
+     * @param array $parameters
      * @return mixed
      */
     public function __call($method, $parameters)
